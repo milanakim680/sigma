@@ -1,0 +1,51 @@
+#GameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    gap: 15px;
+    background-color: rgb(114, 88, 88);
+}
+
+.cell {
+    background-color: rgb(60, 60, 68);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.cell:hover {
+    background-color: aliceblue;
+    transition: 500ms;
+}
+
+.cell:active{
+    background-color: rgb(109, 55, 55);
+    transition: 500ms;
+}
+
+.cellHide {
+    color: transparent;
+    user-select: none;
+}
+
+.cellShown {
+    color: black;
+    user-select: auto;
+}
+
+button:hover{
+    transform: scale(0.9);
+}
+
+button:active{
+    transform: scale(0.8);
+}
+
+button {
+    border-radius: 25px;
+    background-color: rgb(99, 74, 74);
+}
+
+#trg {
+    position: absolute;
+    left: 470px;
+    top: 25px;
+}
